@@ -10,6 +10,5 @@ RUN mkdir /scripts
 WORKDIR /watch
 
 COPY watch.sh /scripts/watch.sh
-COPY .env /scripts/.env
 RUN chmod +x /scripts/watch.sh
 CMD ["/scripts/watch.sh"]
