@@ -1,0 +1,8 @@
+services:
+  log-watcher:
+    build: .
+    container_name: log-watcher
+    restart: unless-stopped
+    volumes:
+      - ./logs:/watch
+      - ./.env:/scripts/.env:ro
