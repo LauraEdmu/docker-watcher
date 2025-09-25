@@ -1,6 +1,7 @@
 services:
   log-watcher:
     build: .
+    image: log-watcher:latest
     container_name: log-watcher
     restart: unless-stopped
     volumes:
